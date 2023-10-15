@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(45deg, rgba(52, 152, 219, 1), rgba(231, 76, 60, 1), rgba(46, 204, 113, 1), rgba(243, 156, 18, 1), rgba(22, 160, 133, 1));
+    background-size: 200% 200%;
+    animation: changeColor 10s infinite; /* Apply the animation to the body */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    text-decoration-color: aliceblue;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    text-decoration-color: aliceblue;
+}
+
+.hero, .about-me, .contact-form {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.square-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.square-image:hover {
+    transform: scale(1.1);
+}
+
+.agro{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.agro {
+    transform: scale(1.1);
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 0; /* Reduced padding for hero section */
+    }
+
+    .about-me, .contact-form {
+        padding: 20px 0; /* Reduced padding for other sections */
+    }
+
+    .square-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 20px 0; /* Further reduced padding for hero section */
+    }
+
+    .about-me, .contact-form {
+        padding: 10px 0; /* Further reduced padding for other sections */
+    }
+
+    .square-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
